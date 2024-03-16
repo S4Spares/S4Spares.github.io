@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lexend', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+._header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 5rem;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+._logo {
+    max-width: 25rem;
+}
+
+._logo img {
+    max-width: 100%;
+}
+
+._menu {
+    position: relative;
+    margin-right: 10rem;
+}
+
+._menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    column-gap: 2rem;
+}
+
+._menu ul li a{
+    text-decoration: none;
+    font-weight: 400;
+    color: #ffffffc1;
+    letter-spacing: 1px;
+}
+
+
+._content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 3rem 5rem;
+    text-align: right;
+    margin-top: 25vh;
+    min-height: 60vh;
+}
+
+._content h2 {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 2.5rem;
+    color: #fff;
+}
+
+._content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+._btn_box {
+    display: flex;
+    align-items: center;
+    column-gap: 0.6rem;
+    padding: 0.5rem 0;
+}
+
+._stay_connect {
+    margin-top: 2rem;
+    font-size: 1rem !important;
+    margin-bottom: 1rem;
+}
+
+
+._btn_box a {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 100%;
+    font-size: 1.2rem;
+    color: #ed1b24;
+    transition: 0.5s;
+
+}
+
+._btn_box a:hover {
+    background-color: #ed1b24;
+    color: #fff;
+}
+
+._outline_btn {
+    text-decoration: none;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.45rem 1.5rem;
+    color: #ed1b24;
+    font-weight: 400;
+    background-color: #fff;
+}
+
+._btn {
+    text-decoration: none;
+    border: 1px solid #ed1b24;
+    background-color: #ed1b24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.45rem 1.5rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+._footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+._footer p {
+    color: rgb(255 255 255 / 58%);
+}
+
+._mail a {
+    text-decoration: none;
+    color: rgb(255 255 255 / 58%);
+}
+
+.bg-video-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    
+
+}
+
+video {
+    max-width: 100%;
+    min-height: 100vh;  
+    width: 100%;  
+    z-index: 1;
+    object-fit: cover;
+}
+
+.taglinekey{
+    font-size: 14px !important;
+    margin-top: 10px;
+    opacity: 0.8;
+    display: none;
+}
+
+.overlay {
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgb(0 0 0 / 65%);
+}
+
+.wrapper{
+    z-index: 999;
+}
+
+
+@media only screen and (max-width: 767px) {
+    ._header {
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    flex-direction: column;
+    padding-top: 6vh;
+    left: 0;
+    width: 100%;
+    }
+    ._logo{
+        max-width: 40vh;
+    }
+
+    ._content {
+        padding: 3rem 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16vh;
+    }
+
+    ._content h2 {
+        font-size: 3vh;
+        letter-spacing: .1vh;
+    }
+
+    ._footer {
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0 !important;
+    text-align: center;
+}
+._menu{
+    margin-right: 0;
+}
+._content p {
+    font-size: 2vh;
+    font-weight: 300;
+    color: #fff;
+}
+._btn_box {
+    display: flex;
+    column-gap: 0.6rem;
+    padding: 0.5rem 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+}
+video {
+    max-width: 100%;
+    min-height: 100vh;  
+    width: 100%;  
+    z-index: 1;
+    object-fit: cover;
+    position: absolute;
+    
+}
+.overlay{
+    z-index: 9999;
+}
+}
